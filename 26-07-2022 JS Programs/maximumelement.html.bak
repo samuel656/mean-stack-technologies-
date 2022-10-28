@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var n=prompt("enter array size");
+var list=new Array(n);
+for(i=0;i<n;i++)
+{
+	list[i]=prompt("enter the array elements");
+}
+var big=list[0];
+for(i=1;i<n;i++)
+{
+	if(big<list[i])
+	{
+		 big=list[i];
+	}
+	
+}
+document.write("maximum element is"+big);
+</script>
+</head>
+</html>

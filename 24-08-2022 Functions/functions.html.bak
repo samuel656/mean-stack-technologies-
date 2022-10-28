@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function add(a,b)
+{
+document.write("addition is "+(a+b)+"\n");
+}
+
+var sub=function(a,b)
+{
+document.write("subtraction is "+(a-b)+"\n");
+}
+var mul=(a,b)=>document.write("multiplication is "+a*b+"\n");
+var big=(a,b)=>{
+	if(a>b)
+		document.write("a is big");
+	else
+		document.write("b is big");
+}
+add(2,3);
+sub(10,5);
+mul(10,2);
+big(20,30);
+
+
+
+
+</script>
+</head>
+

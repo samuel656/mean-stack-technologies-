@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	function focusevent()
+	{
+		document.getElementById("input1").style.background=" beige";
+	}
+</script>
+</head>
+<body>
+<h2> Enter something here</h2>
+<input type="text" id="input1" onfocus="focusevent()"/>
+
+</body>
+</html>
+
+ 

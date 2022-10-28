@@ -1,0 +1,23 @@
+<!DOCSTRING html>
+<html>
+<head>
+<script>
+
+var count=0;
+function generate()
+{
+	document.write(Math.floor(Math.random()*100)+"<br>");
+	count=count+1;
+	if(count==5)
+	{
+		clearInterval(inter);
+	}
+}
+var inter=setInterval(generate,3000);
+</script>
+</head>
+<body>
+Random number generated is :
+</body>
+</html>
+	

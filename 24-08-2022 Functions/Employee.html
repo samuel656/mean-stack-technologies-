@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+class Person
+{
+	constructor(name,age)
+	{
+		this.name=name;
+		this.age=age;
+	}
+	displayA()
+	{
+	document.write("name is "+this.name+"<br>");
+	document.write("age is "+this.age+"<br>");
+	}
+}
+class Employee extends Person
+{
+	constructor(name,age,role,contact)
+	{
+		super(name,age);
+		this.role=role;
+		this.contact=contact;
+	}
+	display()
+	{
+	this.displayA();	
+	document.write("role is "+this.role+"<br>");
+	document.write("contact is "+this.contact+"<br>");
+	}
+}
+var obj=new Employee("sam",19,"Software engineer",565);
+obj.display()
+</script>
+</head>
+</html>

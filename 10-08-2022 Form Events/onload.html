@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function load()
+{
+alert("window loaded");
+}
+function blurfunc() 
+{
+document.getElementById("blur").style.background = "beige";
+}
+</script>
+</head>
+<body onload="load()">
+      <p>enter a text:</p>
+      <input type = "text" id="blur" onblur="blurfunc();">
+	  <button onclick="blurfunc();">Button</button>
+      
+</body>
+</html>

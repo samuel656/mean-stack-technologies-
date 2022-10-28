@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <input type="number" id="no">
+        <button onclick="get();">Submit</button>
+        
+        <script>
+            function get(){
+                var no=parseInt(document.getElementById("no").value);
+                let fix=9;
+                document.write("Cost Per ticket is : $9<br>");
+                document.write("Total Cost : $"+(no*fix)+"<br>");
+
+                let dis=(a)=>{
+                    var cost=0
+                    if(a==2){
+                        cost=fix-((fix*0.05))+fix-((fix*0.07));
+                    }
+                    else if(a==3){
+                        cost=fix-((fix*0.05))+fix-((fix*0.07))+fix-((fix*0.09));
+                    }
+                    else if(a==4){
+                        cost=fix-((fix*0.05))+fix-((fix*0.07))+fix-((fix*0.09))+fix-((fix*0.11));
+                    }
+                    else if(a==5){
+                        cost=fix-((fix*0.05))+fix-((fix*0.07))+fix-((fix*0.09))+fix-((fix*0.11))+fix-((fix*0.13));
+                    }
+                    return cost;
+                }
+                if(no==1){
+                    alert("payable amount is $"+fix);
+                }
+                else if(no>=6){
+                    alert("Booking not allowed for 6 or more tickets");
+                }
+                else{
+                    let x=dis(no);
+                    alert("payable amount is $"+x);
+                }
+				on_click();
+				function on_click()
+				{
+				alert("amount payable is "+cost);
+				}
+            }
+
+			
+			
+
+        </script>
+    </body>
+</html>

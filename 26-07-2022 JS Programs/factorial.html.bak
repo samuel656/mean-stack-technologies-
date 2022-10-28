@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function fact()
+{
+var n=parseInt(document.getElementById("num").value);
+var f=1;
+for(i=1;i<=n;i++)
+{
+	f=f*i;
+}
+window.alert("Factorial of given number" +n+ " is : "+f);
+}
+</script>
+</head>
+<body>
+Enter a number :<input type="text" id="num" placeholder="enter a number">
+<button OnClick="fact();">FACTORIAL</button>
+</body>
+</html>

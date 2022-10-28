@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function blurfunc() 
+{
+document.getElementById("blur").style.background = "beige";
+}
+</script>
+</head>
+<body>
+      <p>enter a text:</p>
+      <input type = "text" id="blur" onblur="blurfunc();">
+      
+</body>
+</html>

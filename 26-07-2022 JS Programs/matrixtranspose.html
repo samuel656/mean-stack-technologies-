@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var list=new Array(3);
+for(i=0;i<3;i++)
+{
+	list[i]=new Array(3);
+}
+for(i=0;i<list.length;i++)
+{
+	for(j=0;j<list[i].length;j++)
+	{
+		list[i][j]=prompt("enter array elements");
+	}
+}
+for(i=0;i<list.length;i++)
+{
+	for(j=0;j<list[i].length;j++)
+	{
+	 document.write(list[i][j]);
+	}
+document.write("\n");
+}
+document.write("\n");
+for(i=0;i<list.length;i++)
+{
+	for(j=0;j<list[i].length;j++)
+	{
+	 document.write(list[j][i]);
+	}
+	document.write("\n");
+
+}
+
+</script>
+</head>
+</html>

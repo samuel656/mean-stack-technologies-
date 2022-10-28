@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function movieSelected()
+{
+var val=document.getElementById("movie").value;
+	document.getElementById("mov").innerHTML="you selected movie is "+val;
+}
+function noOfTickets()
+{
+var val=document.getElementById("tickets").value;
+	document.getElementById("tic").innerHTML="you selected "+val+" tickets";
+}
+function totalAmount()
+{
+  var checkBox = document.getElementById("myCheck");
+  var n=document.getElementById("tickets").value;
+  if(checkbox.checked==true)
+  {
+	
+	var total=n*150;
+	var discount=total*0.1;
+	var total=total-discount;
+	document.getElementById("total").value=total;
+
+  }
+  else{
+  var total=n*150;
+  document.getElementById("total").value=total;
+  }
+}
+</script>
+</head>
+<body>
+<h1 align="center">ONLINE MOVIE TICKET BOOKING</h1>
+<h2> Please select your movie </h2>
+<select id="movie" onchange="movieSelected();">
+<option value="Sita Ramam">SITA RAMAM</option>
+<option value="Bhimisara">BHMISARA</option>
+<option value="Liger">LIGER</option>
+<option value="Kathikeya 2">KARTHIKEYA 2</option>
+</select>
+<br>
+<h2>Enter the number of tickets</h2>
+<select id="tickets" onchange="noOfTickets();">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+<br>
+<br>
+<input type="checkbox" id="checkbox" onclick="totalAmount();">Apply festive season offer
+<br>
+<p id="mov"></p>
+<p id="tic"></p>
+<b>Total:</b>
+<input type="text" id="total">
+</body>
+</html>

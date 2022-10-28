@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function add()
+{
+var a=parseInt(document.getElementById("n1").value);
+var b=parseInt(document.getElementById("n2").value);
+var c=a+b;
+document.getElementById("add").value=c;
+}
+function sub()
+{
+var a=parseInt(document.getElementById("n1").value);
+var b=parseInt(document.getElementById("n2").value);
+var c=a-b;
+document.getElementById("sub").value=c;
+}
+function mul()
+{
+var a=parseInt(document.getElementById("n1").value);
+var b=parseInt(document.getElementById("n2").value);
+var c=a*b;
+document.getElementById("mul").value=c;
+}
+function div()
+{
+var a=parseInt(document.getElementById("n1").value);
+var b=parseInt(document.getElementById("n2").value);
+var c=a/b;
+document.getElementById("div").value=c;
+}
+</script>
+</head>
+<body>
+ENTER NUMBER 1 <input type="text" id="n1">
+<br>
+<br>
+ENTER NUMBER 2 <input type="text" id="n2">
+<br>
+<br>
+<button OnClick="add();">ADD</button>&nbsp;&nbsp;
+<button OnClick="sub();">SUB</button>&nbsp;&nbsp;
+<button OnClick="mul();">MUL</button>&nbsp;&nbsp;
+<button OnClick="div();">DIV</button>&nbsp;&nbsp;
+<br>
+<br>
+<input type="text" size="2" id="add">
+<input type="text" size="2" id="sub">
+<input type="text" size="2" id="mul">
+<input type="text" size="2" id="div">
+<br>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCSTRING html>
+<html>
+<head>
+<script>
+var low=parseInt(prompt("enter lower limit"));
+var up=parseInt(prompt("enter upper limit"));
+function generate()
+{
+	var x=Math.floor(Math.random()*(up-low)+low);
+	document.getElementById("random").value=x;
+}
+</script>
+</head>
+<body>
+<button OnClick="generate();">Generate</button><br>
+The generated random number is&nbsp;:<input type="number" id="random">
+</body>
+</html>
+	

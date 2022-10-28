@@ -1,0 +1,23 @@
+<!DOCSTYLE html>
+<html>
+<head>
+<script>
+function show()
+{
+	var d=new Date();
+	s=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+	document.getElementById("tt").innerHTML=s;
+}
+interval=setInterval(show,1000);
+function stop()
+{
+clearInterval(interval);
+}
+
+</script>
+</head>
+<body>
+<p id="tt"></p>
+<button onclick="stop();">stop</button>
+
+</html>

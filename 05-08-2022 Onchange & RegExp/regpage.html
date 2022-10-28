@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function regPage()
+{
+var username=document.getElementById("username").value;
+var email=document.getElementById("email").value;
+var mobile=document.getElementById("phn").value;
+var password=document.getElementById("pwd").value;
+var u_name=new RegExp("^[A-Z][a-z0-9]+$");
+var mob=new RegExp("[0-9]{10}");
+var mail=new RegExp("[a-z0-9]+@[a-z]+\.[a-z]{2,3}");
+var pswd=new RegExp("^[a-z0-9]{8,12}");
+if(username.match(u_name))
+{
+	if(password.match(pswd))
+	{
+		if(email.match(mail))
+		{
+			if(mobile.match(mob))
+			{
+				alert("valid user");
+			}
+			else
+			{
+				alert("enter valid mobile number");
+			}
+		}
+		else{
+		alert("enter valid email");
+		}
+			
+	}
+	else{
+	alert("enter valid passwod");
+	}
+}
+else{
+alert("enter valid username");
+}
+}
+
+</script>
+</head>
+<body>
+username:&nbsp <input type="text" id="username"><br>
+<br>
+password:&nbsp <input type="password" id="pwd"><br>
+<br>
+e-mail:&nbsp <input type="text" id="email"><br>
+<br>
+mobile:&nbsp <input type="text" id="phn"><br>
+<br>
+<button OnClick="regPage();" >submit</button>
+</body>
+</html>

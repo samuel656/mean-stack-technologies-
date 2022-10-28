@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM API for HTML modification</title>
+</head>
+<body style="background-color:lightblue;text-align:center">
+    <h1 id="hdr1">Here's your ice cream</h1>
+    <img id="img1" src="filledcone.jpg" alt="Ice cream is not ready">
+    <p id="p1" onclick="eat()">Click here to eat</p>
+    <script>
+        //Write the code here
+		function eat()
+		{
+		s=document.getElementById("p1").innerHTML;
+		if(s=="Click here to eat")
+		{
+		let x=document.body;
+		x.style.backgroundColor="green";
+		document.getElementById("hdr1").innerHTML="Hope you liked it";
+		y=document.getElementById("img1").src="emptycone.jpg";
+		document.getElementById("p1").innerHTML="click to re-fill";
+		}
+		else{
+		let x=document.body;
+		x.style.backgroundColor="lightblue";
+		document.getElementById("hdr1").innerHTML="Here's a refilled cone";
+		y=document.getElementById("img1").src="filledcone.jpg";
+		document.getElementById("p1").innerHTML="enjoy yourself!";
+		}
+		}
+		
+    </script>
+</body>
+</html>

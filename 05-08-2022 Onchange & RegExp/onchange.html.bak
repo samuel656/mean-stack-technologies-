@@ -1,0 +1,22 @@
+<!DOCSTYLE html>
+<html>
+<head>
+<script>
+function func()
+{
+	var val=document.getElementById("s").value;
+	document.getElementById("p").innerHTML="you selected car is"+val;
+}
+</script>
+</head>
+<body>
+<p> select a new car from the list</p>
+<select id="s" onChange="func();">
+<option value="audi">AUDI</option>
+<option value="bmw">BMW</option>
+<option value="benz">BENZ</option>
+<option value="ferari">FERRARI</option>
+</select>
+<p id="p"></p>
+</body>
+</html>

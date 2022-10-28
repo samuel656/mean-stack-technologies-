@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function over()
+{
+document.getElementById("bulb").style.width="50px";
+document.getElementById("bulb").style.height="50px";
+}
+function out()
+{
+document.getElementById("bulb").style.width="200px";
+document.getElementById("bulb").style.height="200px";
+}
+</script>
+<body>
+<h1>WELCOME</h1>
+<img src="on.jpg" id="bulb" OnMouseOver="over();" OnMouseOut="out();"> 
+</body>
+</html>

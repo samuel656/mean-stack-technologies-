@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+document.write("<h1> BOOKING SUMMARY</h1>");
+var s=document.getElementById("tic").value;
+function ticket()
+{
+var seats=document.getElementById("tic").value;
+document.write("cost per one ticket is $9<br>");
+document.write("total cost is "+(9*seats)+"<br>");
+calculateDiscount(seats);
+}
+function calculateDiscount(seats)
+{
+
+	if(seats==1)
+	alert("amount per one ticket is 9");
+	else if(seats==2)
+	{
+	var dis1=9-9*0.5;
+	var dis2=9-9*0.7;
+	alert("amount payable is "+(dis1+dis2));
+	}
+	else if(seats==3)
+	{
+	var dis1=9-9*0.5;
+	var dis2=9-9*0.7;
+	var dis3=9-9*0.9;
+	alert("amount payable is "+(dis1+dis2+dis3));
+	}
+	else if(seats==4)
+	{
+	var dis1=9-9*0.05;
+	var dis2=9-9*0.07;
+	var dis3=9-9*0.09;
+	var dis4=9-9*0.11;
+	alert("amount payable is "+(dis1+dis2+dis3+dis4));
+	}
+	else if(seats==4)
+	{
+	var dis1=9-9*0.05;
+	var dis2=9-9*0.07;
+	var dis3=9-9*0.09;
+	var dis4=9-9*0.11;
+	var dis5=9-9*0.13;
+	alert("amount payable is "+(dis1+dis2+dis3+dis4+dis5));
+	}
+	
+	if(seats>5)
+	{
+	alert("booking not done");
+	}
+
+}
+
+
+
+</script>
+</head>
+<body>
+<input type="text" id="tic"><br>
+<br>
+amount payable is <button onclick="ticket();">clickhere</button>
+</body>
+</html>
