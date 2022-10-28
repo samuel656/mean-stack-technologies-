@@ -1,0 +1,12 @@
+exports.authenticate=(a,b)=>
+{
+
+		if(a=="admin" & b=="admin")
+		{
+			return 1;
+		}
+		else{
+			return 0;
+			
+		}
+};

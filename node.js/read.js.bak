@@ -1,0 +1,5 @@
+var ps=require('prompt-sync');
+var prompt=ps();
+var num=prompt("enter a number");
+num=Number(num);
+console.log("the input number is "+num);

@@ -1,0 +1,11 @@
+console.log("welcome to node.js console");
+
+let a=5;
+let b=10;
+
+if(a%2==0)
+{
+	console.log("even number");
+}
+let c=a+b;
+console.log("sum is "+c);
